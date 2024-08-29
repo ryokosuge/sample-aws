@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "aws" {
-  region  = "us-west-2"
+  region = "us-west-2"
 }
 
 resource "aws_instance" "app_server" {
@@ -18,7 +18,7 @@ resource "aws_instance" "app_server" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "Handson_ryokosuge"
-    TED = "20240829_Handson"
+    Name = "Handson_ryokosuge_test"
+    TED  = "20240829_Handson"
   }
 }
